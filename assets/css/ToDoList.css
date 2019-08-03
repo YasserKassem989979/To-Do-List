@@ -1,0 +1,101 @@
+html{
+
+    font-size: 62.5%;
+    
+
+}
+
+body{
+    padding: 3rem;
+    background-image: linear-gradient(90deg,#ee9ca7,#ffdde1);
+    font-family: 'Acme', sans-serif;
+}
+
+#container{
+
+    font-size: 1.6rem;
+    max-width: 360px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+   
+}
+
+.heading{
+margin: 0 auto;
+
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+input{
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1.4rem;
+    background-color: white;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 3px solid #348AC7;
+}
+
+
+.todo-list{
+
+    margin: 4rem auto;
+    color: white;
+}
+
+ul{
+    list-style: none; 
+    padding: 0;
+}
+
+
+
+li{
+    /* border:1px solid red; */
+    border-radius: 5px;
+    box-shadow: 0rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+    display: block;
+     padding: 15px 20px;
+     margin-top: 1rem;
+     background-image: linear-gradient(to right,#7474BF,#348AC7);
+     position: relative;
+     overflow: hidden;
+     
+}
+
+li span{
+    position: absolute;
+    top:50%;
+    left:0%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white;
+    width: 12%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+    backface-visibility: hidden;
+    
+     
+}
+
+.fa-trash{
+    color:red;
+    margin: 50% auto;
+    transform: translateY(-50%)
+}
+
+li:hover span{
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
